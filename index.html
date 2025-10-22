@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Min nettside</title>
-  <link rel="stylesheet" href="css/BØ.css" />
+    <meta charset="UTF-8">
+    <title>BØ Industribedrift - Hjem</title>
+    <link rel="stylesheet" href="CSS/BØ.css">
 </head>
+
 <body>
-  <header>
-    <h1>Velkommen til min nettside</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="KontorrekvisitaBØ.html">Kontorrekvisita</a></li>
-        <li><a href="MonteringBØ.html">Montering</a></li>
-        <li><a href="UtleieBØ.html">Utleie</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="header">BØ Industribedrift</div>
+    </header>
+    
+    <lenker>
+        <a href="index.html">Hjem</a> |
+        <a href="KontorrekvisitaBØ.html">Kontorrekvisita</a> |
+        <a href="MonteringBØ.html">Montering</a> |
+        <a href="UtleieBØ.html">Utleie</a>
+    </lenker>
+    
+    <div class="container">
 
-  <main>
-    <section>
-      <h2>Velkommen</h2>
-      <p>Her kan du skrive litt om nettsiden din eller firmaet.</p>
-      <img src="bilder/kontorstol.png" alt="Kontorstol" style="max-width:300px;" />
-    </section>
-  </main>
+      <div class="product-box">
+        <div class="product-title">Kontorrekvisita</div>
+        <div class="product-desc">Vi tilbyr et bredt utvalg av kontorrekvisita.</div>
+        <img src="bilder/Notatbok.png" alt="Notatbok" usemap="#KontorrekvisitaMap" width="200" height="200">
+        <map name="KontorrekvisitaMap">
+          <area shape="rect" coords="0,0,200,200" href="KontorrekvisitaBØ.html" alt="Kontorrekvisita">
+        <div class="product-price">Pris: 99,-</div>
+       
+      </div>
+        <div class="product-box">
+        <div class="product-title">Montering</div>
+        <div class="product-desc">Vi tilbyr henting og installasjon av utstyr.</div>
+        <img src="bilder/Montering2.png" alt="Montering" usemap="#MonteringMap" width="240" height="200">
+        <map name="MonteringMap">
+          <area shape="rect" coords="0,0,240,200" href="MonteringBØ.html" alt="Montering">
+        </map>
+        <div class="product-price">Pris: 99,-</div>
+      </div>
 
-  <footer>
-    <p>© 2025 Ditt Navn eller Firma</p>
-  </footer>
+      <div class="product-box">
+        <div class="product-title">Utleie</div>
+        <div class="product-desc">Vi tilbyr henting og installasjon av utstyr.</div>
+        <img src="bilder/Kontorstol.png" alt="Kontorstol" usemap="#UtleieMap" width="200" height="200">
+        <map name="UtleieMap">
+          <area shape="rect" coords="0,0,200,200" href="UtleieBØ.html" alt="Utleie">
+        </map>
+        <div class="product-price">Pris: 199,-</div>
+      </div>
+
+
+    </div>
 </body>
 </html>
-
